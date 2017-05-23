@@ -10,7 +10,7 @@ Angular 4 Udemy tutorial project
 * Updating the angular-cli: `npm uninstall -g angular-cli @angular/cli;  npm cache clean; npm install -g @angular/cli`
 * `ng-model` in angularJS is replaced by `[(ngModel)] = "property"`
 * TypeScript: Superset to Javascript offers: Types, Classes, Interface
-* How Angular App starts: The main.ts fine knows the AppModule and AppModule.ts bootstraps the components it has say AppComponent which has the HTML, css files to be used for this component. A few javascipt files are added at the bottom of our index file during ng serve.
+* How Angular App starts: The main.ts file knows which app module is in use AppModule and AppModule.ts bootstraps the components it has say AppComponent which has the HTML, css files to be used for this component. A few javascipt files are added at the bottom of our index file during ng serve.
 * 
 
 
