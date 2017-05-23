@@ -10,5 +10,27 @@ Angular 4 Udemy tutorial project
 * Updating the angular-cli: `npm uninstall -g angular-cli @angular/cli;  npm cache clean; npm install -g @angular/cli`
 * `ng-model` in angularJS is replaced by `[(ngModel)] = "property"`
 
+### Components & Databinding: ###
 
+### Directives ###
+
+### Services & Dependency Injection ###
+
+### Routing ###
+
+### Observables ###
+
+### Forms ###
+
+### Pipes ###
+
+### Http ###
+
+### Authentication ###
+
+### Optimizations & NgModules ###
+
+### Deployment ###
+
+### Animations & Testing ###
 
