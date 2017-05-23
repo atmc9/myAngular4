@@ -1,4 +1,4 @@
-# myAngular4
+# myAngular4App
 Angular 4 Udemy tutorial project
 
 
