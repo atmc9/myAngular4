@@ -11,10 +11,10 @@ Angular 4 Udemy tutorial project
 * `ng-model` in angularJS is replaced by `[(ngModel)] = "property"`
 * TypeScript: Superset to Javascript offers: Types, Classes, Interface
 * How Angular App starts: The main.ts file knows which app module is in use AppModule and AppModule.ts bootstraps the components it has say AppComponent which has the HTML, css files to be used for this component. A few javascipt files are added at the bottom of our index file during ng serve.
-* 
-
 
 ### Components & Databinding: ###
+* I can create a component using CLR `ng g c MyComponent` or can create a new MyComponent folder and add the TypeScript file with MyComponent.Component.ts name and MyComponent.Component.html files
+* 
 
 ### Directives ###
 
