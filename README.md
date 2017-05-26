@@ -19,7 +19,7 @@ Angular 4 Udemy tutorial project
     2. PropertyBinding: `<button [disabled]="!allowButton"></button>` Dont mix the propertybinding and stringInterpollation [disabled]="{{!allowButton}}". This will break. 
     3. Event Binding: `<button (click)="functionName()"></button>`   // we can use any event name mouseenter, mouseleave, etc
        We can even use `(input)="onInputName($event)"`   and the `$event will pass the information about the event` what input is texted. you can access that data in you function as event.target.value whoch might need typecast (<HTMLInputElement>event.target).value. 
-    4. 
+    4. Two-way Binding: `[(ngModel)]="myVariable"` this does the magic in 2-way :P. For this to work you need to import NgModel directive from `@angular/core` and FormsModule from `@angular/forms` on your main app module.
     
 
 ### Directives ###
