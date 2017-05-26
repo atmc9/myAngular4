@@ -17,7 +17,9 @@ Angular 4 Udemy tutorial project
 * Databinding: Can be done using 4 ways
     1. String Interpollation: {{ VariableName }} , {{ functionName(param1)  // that retuns a string }}, {{ condition? class1 : class2}} etc
     2. PropertyBinding: <button [disabled]="!allowButton"></button>. Dont mix the propertybinding and stringInterpollation [disabled]="{{!allowButton}}". This will break. 
-    3. Event Binding: 
+    3. Event Binding: <button (click)="functionName()"></button>   // we can use any event name mouseenter, mouseleave, etc
+    4. 
+    
 
 ### Directives ###
 
