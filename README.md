@@ -21,8 +21,8 @@ Angular 4 Udemy tutorial project
        We can even use `(input)="onInputName($event)"`   and the `$event will pass the information about the event` what input is texted. you can access that data in you function as event.target.value whoch might need typecast (<HTMLInputElement>event.target).value. 
     4. Two-way Binding: `[(ngModel)]="myVariable"` this does the magic in 2-way :P. For this to work you need to import FormsModule from `@angular/forms` on your main app module.
     
-
 ### Directives ###
+* Directives are instructions in the DOM  
 
 ### Services & Dependency Injection ###
 
