@@ -30,7 +30,7 @@ Angular 4 Udemy tutorial project
     export class TurnGreenDirective { .... }   `
 * Structural directives like  `<p *ngIf="boolCondition"> The condition is true</p>` will change the DOM require * before directivename.     `<p *ngIf="boolCondition; else falseTemplate"> The condition is true</p>`
     `<ng-template #falseTemplate>The condition is false</ng-template>`
-
+* Attribute directives: They dont add or remove elements. They only change the element they were placed on. `<p [ngStyle]="backgroundColor: getColor()"></p>`. `[ngClass]="{myClass: true}"`
 ### Services & Dependency Injection ###
 
 ### Routing ###
