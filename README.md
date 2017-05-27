@@ -27,7 +27,7 @@ Angular 4 Udemy tutorial project
     @Directive({    
         selector:'[appTurnGreen]'        
     })    
-    export class TurnGreenDirective { ... }
+    export class TurnGreenDirective { .... }
     `
 
 ### Services & Dependency Injection ###
