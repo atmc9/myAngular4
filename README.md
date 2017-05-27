@@ -22,7 +22,12 @@ Angular 4 Udemy tutorial project
     4. Two-way Binding: `[(ngModel)]="myVariable"` this does the magic in 2-way :P. For this to work you need to import FormsModule from `@angular/forms` on your main app module.
     
 ### Directives ###
-* Directives are instructions in the DOM  
+* Directives are instructions in the DOM. When we use component selector name on the DOM, we are kind of instructing the dom to render the template in our component. **Component are directives, but with a template.**  We typically add directive with attribute selector, can be configured as css class or element.    
+* Example: `<p appTurnGreen> Receive a Green Background! </p>
+    @Directive({
+        selector:'[appTurnGreen]'
+    })
+    export class TurnGreenDirective { ... }`
 
 ### Services & Dependency Injection ###
 
