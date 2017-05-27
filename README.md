@@ -28,7 +28,8 @@ Angular 4 Udemy tutorial project
         selector:'[appTurnGreen]'        
     })    
     export class TurnGreenDirective { .... }   `
-* Structural directives like  `<p *ngIf="boolCondition"> The condition is true</p>` will change the DOM require * before directivename. ##   `<p *ngIf="boolCondition; else falseTemplate"> The condition is true</p> ## <ng-template #falseTemplate>The condition is false</ng-template>`
+* Structural directives like  `<p *ngIf="boolCondition"> The condition is true</p>` will change the DOM require * before directivename.     `<p *ngIf="boolCondition; else falseTemplate"> The condition is true</p>`
+    `<ng-template #falseTemplate>The condition is false</ng-template>`
 
 ### Services & Dependency Injection ###
 
