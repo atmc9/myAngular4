@@ -24,10 +24,15 @@ Angular 4 Udemy tutorial project
 ### Directives ###
 * Directives are instructions in the DOM. When we use component selector name on the DOM, we are kind of instructing the dom to render the template in our component. **Component are directives, but with a template.**  We typically add directive with attribute selector, can be configured as css class or element.    
 * Example: `<p appTurnGreen> Receive a Green Background! </p>
+
     @Directive({
+    
         selector:'[appTurnGreen]'
+        
     })
-    export class TurnGreenDirective { ... }`
+    
+    export class TurnGreenDirective { ... }
+    `
 
 ### Services & Dependency Injection ###
 
