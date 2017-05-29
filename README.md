@@ -49,10 +49,10 @@ Angular 4 Udemy tutorial project
 * **Lifecycle of components:** 
     1. ngOnChanges - called after a bound input property changes
     2. ngOnInit - called once the component is initialized. It runs after the constructor. 
-    3. ngDoCheck - called during every change detection run
-    4. ngAfterContentInit - called after content(ng-content) has been projected into view. 
+    3. ngDoCheck - called during every change detection run - called twice in development mode, as angular has extra change detection cycle. 
+    4. ngAfterContentInit - called after content(ng-content) has been projected into view. If your component has ng-content dynamically passed between the component seletor tags, and if that content has a localVariable, you can access it by @ContentChild() and the element is only avialable after the ngAfterContentInit event. 
     5. ngAfterContentCheck - called everytime the projected content has been checked. 
-    6. ngAfterViewInit - called after the componnet's view (and child views) has been initialized.
+    6. ngAfterViewInit - called after the componet's view (and child views) has been initialized. You can access the @ViewChild() elements data only after this event.
     7. ngAfterViewChecked - called every time the view(and child views) have been checked. 
     8. ngOnDestroy - called once the component is about to be destroyed
 
