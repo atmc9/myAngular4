@@ -40,7 +40,8 @@ Angular 4 Udemy tutorial project
 * Debugging help: When I put a break point on my main.bundle.js I opens the typescript file using source map or else I can open my webpack folder typesciprt files. **Useful debugging tool: Augury**
 * How to achieve the inter component communication: Property and Event binding on our directives like in ngClass, ngStyle with this approach, also we can use it on our own components and bind them on custom properties and custom events. 
 * **Custom Property Binding:** This can be done by making our component properties exposed by decorating with **@Input()** imported from '@Angular/core'. You can even alias by @Input('myAliasElement'). 
-* ** Custom Event Binding: ** You can emmit events from your components by setting a property assigned with `eventCreated = new EventEmitter<datatype>` and finally emmit this in a function by saying `this.eventCreated.emit({object of datatype});`. Make sure you add the @Output before your property as you are emitting event outside of component. 
+* ** Custom Event Binding: ** You can emmit events from your components by setting a property assigned with `eventCreated = new EventEmitter<datatype>` and finally emmit this in a function by saying `this.eventCreated.emit({object of datatype});`. Make sure you add the @Output before your property as you are emitting event outside of component. Youcan add alis of event as @Output('EventAlias')
+* 
 
 ### Services & Dependency Injection ###
 
