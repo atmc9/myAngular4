@@ -33,6 +33,10 @@ Angular 4 Udemy tutorial project
 * Attribute directives: They dont add or remove elements. They only change the element they were placed on. `<p [ngStyle]="backgroundColor: getColor()"></p>`. `[ngClass]="{myClass: true}"`
 * ngFor(Structural directive) `*ngFor="let item of itemslist; let i = index"` 
 
+## New Project setup: 
+* New Angular Course Project Creation: ng new ng4-Complete-Guide;  npm install --save bootstrap ; ng g c component --spec false // does not creates the test files; 
+* ``Please see my fullstack developer reading material for Bootstrap navigation ``
+
 ### Services & Dependency Injection ###
 
 ### Routing ###
