@@ -44,6 +44,17 @@ Angular 4 Udemy tutorial project
 * The Event and Property binding is very good to use in scenarios to communicate with parent or child components, but if the hop distance increases it is recomended to use the services for component communication. By default CSS applies only to our component. 
 * **View Encapsulation in Angular: ** The Html of an Component is Encapsulated using templateUrl and CSS using styleUrls. Very important note is CSS styles does not apply to all components it is acheived by angular by adding attributes of all its component elements(Kind of emulates shadow DOM). You can change 'encapsulation: ViewEncapsulation.Emulated(default)' // None(any css added to this component will be applied global, attributes are not added specific to your component), Native (Uses the Shadow DOM technology but only works with browser that support Shadow DOM )
 * **Local references in templates and @ViewChild ** We can declare #LocallVariable as a refernce to an element and can pass to function as parameter or it can be also fetched using @ViewChild('LocallVariable') locallVariable : ElementRef; and can be used as this.locallVariable.nativeElement.value to get the value from DOM. Better to not set values on Dom, just use it to read values. 
+* ng-content: You can set the markup between your custom component tags by using ng-content directive in your html template of component where your dynamic content needs to go.
+
+* **Lifecycle of components: ** 
+    1. ngOnChanges - called after a bound input property changes
+    2. ngOnInit - called once the component is initialized. It runs after the constructor. 
+    3. ngDoCheck - called during every change detection run
+    4. ngAfterContentInit - called after content(ng-content) has been projected into view. 
+    5. ngAfterContentCheck - called everytime the projected content has been checked. 
+    6. ngAfterViewInit - called after the componnet's view (and child views) has been initialized.
+    7. ngAfterViewChecked - called every time the view(and child views) have been checked. 
+    8. ngOnDestroy - called once the component is about to be destroyed
 
 ### Services & Dependency Injection ###
 
