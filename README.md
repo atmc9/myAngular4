@@ -37,6 +37,7 @@ Angular 4 Udemy tutorial project
 * New Angular Course Project Creation: ng new ng4-Complete-Guide;  npm install --save bootstrap ; ng g c component --spec false // does not creates the test files; 
 * ``Please see my fullstack developer reading material for Bootstrap navigation ``
 * Create model where-ever make sense, use the shortcut of Typescipt for creating a model construtor(public name: string, pubic count: number){}
+* Debugging help: When I put a break point on my main.bundle.js I opens the typescript file using source map or else I can open my webpack folder typesciprt files. 
 * How to achieve the inter component communication: 
 
 ### Services & Dependency Injection ###
