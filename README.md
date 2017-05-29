@@ -42,7 +42,7 @@ Angular 4 Udemy tutorial project
 * **Custom Property Binding:** This can be done by making our component properties exposed by decorating with **@Input()** imported from '@Angular/core'. You can even alias by @Input('myAliasElement'). 
 * ** Custom Event Binding: ** You can emmit events from your components by setting a property assigned with `eventCreated = new EventEmitter<datatype>` and finally emmit this in a function by saying `this.eventCreated.emit({object of datatype});`. Make sure you add the @Output before your property as you are emitting event outside of component. Youcan add alis of event as @Output('EventAlias')
 * The Event and Property binding is very good to use in scenarios to communicate with parent or child components, but if the hop distance increases it is recomended to use the services for component communication. By default CSS applies only to our component. 
-* **View Encapsulation in Angular: ** The Html of an COmponent is Encapsulated using templateUrl and CSS using styleUrls. Very important note is CSS styles does not apply to all components it is acheived by angular by adding attributes of all its component elements. 
+* **View Encapsulation in Angular: ** The Html of an COmponent is Encapsulated using templateUrl and CSS using styleUrls. Very important note is CSS styles does not apply to all components it is acheived by angular by adding attributes of all its component elements(Kind of emulates shadow DOM). 
 
 ### Services & Dependency Injection ###
 
