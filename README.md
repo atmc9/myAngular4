@@ -55,7 +55,8 @@ Angular 4 Udemy tutorial project
     6. ngAfterViewInit - called after the componet's view (and child views) has been initialized. You can access the @ViewChild() elements data only after this event.
     7. ngAfterViewChecked - called every time the view(and child views) have been checked. 
     8. ngOnDestroy - called once the component is about to be destroyed
-
+* Creating Directives: @Directive({selector: [appBasicHighlight]}) in its construtor we can access the Element that this directive is being used Ex: `constructor(private elementRef: ElementRef){} ngOnInit(){this.elementRef.nativeElement.style.backgroundColor = 'green'};`
+* 
 ### Services & Dependency Injection ###
 
 ### Routing ###
