@@ -56,7 +56,9 @@ Angular 4 Udemy tutorial project
     7. ngAfterViewChecked - called every time the view(and child views) have been checked. 
     8. ngOnDestroy - called once the component is about to be destroyed
 * Creating Directives: @Directive({selector: [appBasicHighlight]}) in its construtor we can access the Element that this directive is being used Ex: `constructor(private elementRef: ElementRef){} ngOnInit(){this.elementRef.nativeElement.style.backgroundColor = 'green'};`
-* Better approach to access DOM in a Directive is using Renderer Ex: `constructor(private elementRef: ElementRef, private renderer: Renderer2){}  ngOnInit(){this.renderer.setStyle(this.elementRef.nativeElement, 'background-color','green'); }`
+* Better approach to access DOM in a Directive is using Renderer Ex: `constructor(private elementRef: ElementRef, private renderer: Renderer2){}  ngOnInit(){this.renderer.setStyle(this.elementRef.nativeElement, 'background-color','green'); }`. More about Render at : https://angular.io/docs/ts/latest/api/core/index/Renderer2-class.html 
+* 
+
 ### Services & Dependency Injection ###
 
 ### Routing ###
