@@ -58,21 +58,21 @@ Angular 4 Udemy tutorial project
 * Creating Directives: @Directive({selector: [appBasicHighlight]}) in its construtor we can access the Element that this directive is being used Ex: `constructor(private elementRef: ElementRef){} ngOnInit(){this.elementRef.nativeElement.style.backgroundColor = 'green'};`
 * **Own Attribute Directive:** Better approach to access DOM in a Directive is using Renderer Ex: `constructor(private elementRef: ElementRef, private renderer: Renderer2){}  ngOnInit(){this.renderer.setStyle(this.elementRef.nativeElement, 'background-color','green'); }`. More about Render at : https://angular.io/docs/ts/latest/api/core/index/Renderer2-class.html. You can even listen to the events on the host by using `@HostListener('mouseenter') mouseover(eventData: Event){}`. Another easy way to bind data `@HostBinding(''style:backgroundColor) bgcolorVariable : string;`. You can acceess the property binding of directives just like components. For the property binding of string variable, you can remove the [] brackes and remove the single quotes in the string. 
 * **Own Structural Directive:** what does * transforms to `<div *ngIf='true'>   => <ng-template [ngIf]='true'>`  
-   `import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
-
-@Directive({
-  selector: '[appUnless]'
-})
-export class UnlessDirective {
-@Input() set appUnless(condition: boolean) {
-   if (!condition) {
-      this.vcRef.createEmbeddedView(this.templateRef);
-   } else {
-   }
-}
-  constructor(private templateRef: TemplateRef<any>, private  vcRef: ViewContainerRef) { }
-}`
-
+   `import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core'
+    @Directive({
+      selector: '[appUnless]'  
+    })
+    export class UnlessDirective {
+    @Input() set appUnless(condition: boolean) {
+       if (!condition) {
+          this.vcRef.createEmbeddedView(this.templateRef);
+       } else {
+       this.vcRef.clear();
+       }
+    }
+      constructor(private templateRef: TemplateRef<any>, private  vcRef: ViewContainerRef) { }
+    }`
+    Note: The Input property name should be same as the directive name for the structural one. 
 ### Services & Dependency Injection ###
 
 ### Routing ###
