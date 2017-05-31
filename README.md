@@ -73,6 +73,9 @@ Angular 4 Udemy tutorial project
       constructor(private templateRef: TemplateRef<any>, private  vcRef: ViewContainerRef) { }
     }`
     Note: The Input property name should be same as the directive name for the structural one. 
+    
+* ngSwitch: `<div [ngSwitch]="value"> <p *ngSwitchCase="5">Value is 5</p> <p *ngSwitchCase="7">Value is 7</p> <p *ngSwitchDefault>Value is Default</p>
+
 ### Services & Dependency Injection ###
 
 ### Routing ###
