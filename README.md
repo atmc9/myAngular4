@@ -77,7 +77,13 @@ Angular 4 Udemy tutorial project
 * ngSwitch: `<div [ngSwitch]="value"> <p *ngSwitchCase="5">Value is 5</p> <p *ngSwitchCase="7">Value is 7</p> <p *ngSwitchDefault>Value is Default</p>`
 
 ### Services & Dependency Injection ###
-
+* **UseCase of a service:** Duplication of code(modualr functionality) or Data that need to shared.
+* **Creating a Service**: It is simple by adding a new class file with methods, you can import that file in the places and create an instance of that class, but that is not the prefernce way as we  should n't be created our own instances of services, we need to reuse the instances that were created in other components, how to acheive it. 
+* **Dependency Injection:** Instead of created a new instance of service, in our component e need to add the `provider: [LoggingService]  and get the instance using construtor : construtor(private loggingService LoggingService)`
+* **Hierarchical Injector:** Angular Dependency Injector is a hierarchial Injector, when we provide a service at a components Angular DPI knows how to create an instance of service for that compoent and all its child components. 
+           1. If we provide a service at appModule it is available to all components , directives, to our services. 
+           2. If we provide a service at appComponent it is available to all components, not services. 
+           3. If we provide a service at anyother component in middle will be available to just its child components
 ### Routing ###
 
 ### Observables ###
