@@ -84,7 +84,8 @@ Angular 4 Udemy tutorial project
 
            1. If we provide a service at appModule it is available to all components , directives, to our services. 
            2. If we provide a service at appComponent it is available to all components, not services. 
-           3. If we provide a service at anyother component in middle will be available to just its child components
+           3. If we provide a service at anyother component in middle will be available to just its child components.
+ * If my service needs some other service as a dependency, we need to add a decoration of @Injectable saying that our service need someother service to be injectable. 
 ### Routing ###
 
 ### Observables ###
