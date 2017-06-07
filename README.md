@@ -95,7 +95,7 @@ Angular 4 Udemy tutorial project
   {path: 'users' , component: UserComponent}];   add the RouterModule as  RouterModule.forRoot(appRoutes)
 `
 * To add the routing for all tabs, we can add the href values with paths defined in our routing, but that is not the prefered way as that reloads the whole app. We should use `routerLink='/servers' //AbsolutePath vs routerLink ='servers' //RelativePath like './servers'  or [routerLink]="['/users','shoppingHistory']"`
-* 
+* RouterLinkActive directive:  `routerLinkActive="active" // adds the css class based the router it is in [routerLinkActiveOptions]="{exact: true}">`
 ### Observables ###
 
 ### Forms ###
