@@ -98,8 +98,9 @@ Angular 4 Udemy tutorial project
 * RouterLinkActive directive:  `routerLinkActive="active" // adds the css class based the router it is in [routerLinkActiveOptions]="{exact: true}">`
 * For navigating to a different route in the code, we need to inject the Router : `  constructor( private router: Router) { }       this.router.navigate(['/servers']);     this.router.navigate(['servers'], {relativeTo: this.route} );  // where route: ActivatedRoute injected from constructor. `
 * Routing with Id's:   `{path: 'user/:id' , component: UserComponent}` anything after : is interpreted as id. 
-* How to get the dynamic value from router inside the component: ` this.route.snapshot.params['id']`
-* If my component can be created from my same component, then angular does not creates a new component, but if we have the data params that got chnaged, we can access them using 
+* **How to get the dynamic value from router inside the component:** ` this.route.snapshot.params['id']`
+* If my component can be created from my same component, then angular does not creates a new component, but if we have the data params that got chnaged, we can access them using `this.route.params.subscribe( (params: Params) => { } );` . Also when yiu are subscribing to an event make sure you store that in a varaible and onDestroy unsubscribe that event.
+* **Access Query Params, Fragments:** 
 
 ### Observables ###
 
