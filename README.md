@@ -96,6 +96,8 @@ Angular 4 Udemy tutorial project
 `
 * To add the routing for all tabs, we can add the href values with paths defined in our routing, but that is not the prefered way as that reloads the whole app. We should use `routerLink='/servers' //AbsolutePath vs routerLink ='servers' //RelativePath like './servers'  or [routerLink]="['/users','shoppingHistory']"`
 * RouterLinkActive directive:  `routerLinkActive="active" // adds the css class based the router it is in [routerLinkActiveOptions]="{exact: true}">`
+* For navigating to a different route in the code, we need to inject the Router : `  constructor( private router: Router) { }       this.router.navigate(['/servers']);
+`
 ### Observables ###
 
 ### Forms ###
