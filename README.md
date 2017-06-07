@@ -100,8 +100,9 @@ Angular 4 Udemy tutorial project
 * Routing with Id's:   `{path: 'user/:id' , component: UserComponent}` anything after : is interpreted as id. 
 * **How to get the dynamic value from router inside the component:** ` this.route.snapshot.params['id']`
 * If my component can be created from my same component, then angular does not creates a new component, but if we have the data params that got chnaged, we can access them using `this.route.params.subscribe( (params: Params) => { } );` . Also when yiu are subscribing to an event make sure you store that in a varaible and onDestroy unsubscribe that event.
-* **Access Query Params, Fragments:** ` [routerLink]="['/servers/',5,'edit']"  [queryParams]="{allowEdit: '1'}"  [fragment]="'loading'"`
+* **Access Query Params, Fragments:** you can add these from a template in the following way. ` [routerLink]="['/servers/',5,'edit']"  [queryParams]="{allowEdit: '1'}"  [fragment]="'loading'"`. If you need to add this programatically, `    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowedit: '1'}, fragment : 'loading'});`
 
+* 
 ### Observables ###
 
 ### Forms ###
