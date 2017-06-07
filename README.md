@@ -87,8 +87,13 @@ Angular 4 Udemy tutorial project
            3. If we provide a service at anyother component in middle will be available to just its child components.
  * If my service needs some other service as a dependency, we need to add a decoration of @Injectable saying that our service need someother service to be injectable. 
  * Using services for PushNotifications: If you have to update something has changed in your service, you need to create an eventEmitter in the service and onAdd/Delete function make sure you emit this event so the components using this service will subscribe to this event and will pull the latest data. 
- * 
+
 ### Routing ###
+* Rounting is used to directly access the specifc resource of website. Really helpful when the application has more functionality. 
+* Way to add Routing: `<router-outlet> //used as placeholder for our routers component.   const appRoutes: Routes = [
+  {path: '' , component: HomeComponent},
+  {path: 'users' , component: UserComponent}];   add the RouterModule as  RouterModule.forRoot(appRoutes)
+`
 
 ### Observables ###
 
