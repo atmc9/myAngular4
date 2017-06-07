@@ -96,8 +96,10 @@ Angular 4 Udemy tutorial project
 `
 * To add the routing for all tabs, we can add the href values with paths defined in our routing, but that is not the prefered way as that reloads the whole app. We should use `routerLink='/servers' //AbsolutePath vs routerLink ='servers' //RelativePath like './servers'  or [routerLink]="['/users','shoppingHistory']"`
 * RouterLinkActive directive:  `routerLinkActive="active" // adds the css class based the router it is in [routerLinkActiveOptions]="{exact: true}">`
-* For navigating to a different route in the code, we need to inject the Router : `  constructor( private router: Router) { }       this.router.navigate(['/servers']);
-`
+* For navigating to a different route in the code, we need to inject the Router : `  constructor( private router: Router) { }       this.router.navigate(['/servers']);     this.router.navigate(['servers'], {relativeTo: this.route} );  // where route: ActivatedRoute injected from constructor. `
+* Routing with Id's:   `{path: 'user/:id' , component: UserComponent}` anything after : is interpreted as id. 
+* How to get the dynamic value from router inside the component: ` this.route.snapshot.params['id']`
+
 ### Observables ###
 
 ### Forms ###
