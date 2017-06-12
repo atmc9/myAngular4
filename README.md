@@ -101,7 +101,10 @@ Angular 4 Udemy tutorial project
 * **How to get the dynamic value from router inside the component:** ` this.route.snapshot.params['id']`
 * If my component can be created from my same component, then angular does not creates a new component, but if we have the data params that got chnaged, we can access them using `this.route.params.subscribe( (params: Params) => { } );` . Also when yiu are subscribing to an event make sure you store that in a varaible and onDestroy unsubscribe that event.
 * **Passing Query Params, Fragments:** you can add these from a template in the following way. ` [routerLink]="['/servers/',5,'edit']"  [queryParams]="{allowEdit: '1'}"  [fragment]="'loading'"`. If you need to add this programatically, `    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowedit: '1'}, fragment : 'loading'});`
-* **Retreiving the Query Params, Fragments:** 
+* **Retreiving the Query Params, Fragments:** You can access the query params, fragment using the this.route.snapshot.queryParams or this.route.queryParams.subscribe( observable if the queryparam chnages on theis page you can handle the change in this subscribe fucntion);
+* Router inside a router (child router) : In our route decleration add children param and assign the child routers , make sure you add a <router-outlet> in the parent component. 
+* Merge or preserver the query params between the new navigation: This can be done using the queryParamsHandling: 'preserved' or 'merge'
+
 ### Observables ###
 
 ### Forms ###
