@@ -104,7 +104,7 @@ Angular 4 Udemy tutorial project
 * **Retreiving the Query Params, Fragments:** You can access the query params, fragment using the this.route.snapshot.queryParams or this.route.queryParams.subscribe( observable if the queryparam chnages on theis page you can handle the change in this subscribe fucntion);
 * Router inside a router (child router) : In our route decleration add children param and assign the child routers , make sure you add a <router-outlet> in the parent component. 
 * Merge or preserver the query params between the new navigation: This can be done using the queryParamsHandling: 'preserved' or 'merge'
-
+* Redirect to a different route on accessing a specific route, `{path: 'something', redirectTo: '/home'     '**' is to catch all generic routes, make sure you defined that route at end.`
 ### Observables ###
 
 ### Forms ###
