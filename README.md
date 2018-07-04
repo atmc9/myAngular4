@@ -1,6 +1,10 @@
 # myAngular4App
 Angular 4 Udemy tutorial project
 
+**Angular:** is a javascript framework which allows to create reactive single-page applications.  
+
+Steps to do for installing the angular: 
+
 
 ## Project setup: ##
 * We installed the nodejs and install the Angular cli using the command : `npm install -g @angular/cli`
